@@ -1,13 +1,17 @@
 package com.tier2.xml.extractor.DTO;
 
 import com.tier2.xml.extractor.adapter.DateAdapter;
+import com.tier2.xml.extractor.singleton.EpcraTier2DatasetDiff;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
 import jakarta.xml.bind.annotation.XmlValue;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
+
 @XmlType(propOrder = {"facilityName", "streetAddress",
 		"mailingAddress", "county", "fireDistrict", "latLong",
 		"department","notes","sitePlanAttached","siteCoordAbbrevAttached",
@@ -15,7 +19,7 @@ import java.util.Date;
 		"nameAndTitleOfCertifier", "dateSigned","feesTotal","manned","maxNumOccupants",
 		"subjectToChemAccidentPrevention", "subjectToEmergencyPlanning", "stateFields",
 		"lastModified", "contactIds","chemicals","facilityIds"})
-public class Facility {
+public class Facility implements Comparable<Facility>{
 	private String FacilityName;
 	private StreetAddress StreetAddress;
 	private MailingAddress MailingAddress;
@@ -196,4 +200,87 @@ public class Facility {
 		 return this.Recordid; } 
 	public void setRecordid(String Recordid) { 
 		 this.Recordid = Recordid; }
+
+	@Override
+	public int compareTo(Facility o) {
+		int isequal = 0;
+		EpcraTier2DatasetDiff epcraTier2DatasetDiff = EpcraTier2DatasetDiff.getInstance();
+		if(!Objects.equals(this.FacilityName, o.FacilityName))
+		{
+			epcraTier2DatasetDiff.addDifferences("<Facility>: FacilityName is not same");
+			isequal = 1;
+		}
+		if(!Objects.equals(this.County, o.County)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: County is not same");
+			isequal = 1;
+		}
+		if(!Objects.equals(this.FireDistrict, o.FireDistrict)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: FireDistrict is not same");
+			isequal = 1;
+		}
+		if(!Objects.equals(this.Department, o.Department)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: Department is not same");
+			isequal = 1;
+		}
+		if(!Objects.equals(this.Notes, o.Notes)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: Notes is not same");
+			isequal = 1;
+		}
+		if(this.SitePlanAttached != o.SitePlanAttached){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: SitePlanAttached is not same");
+			isequal = 1;
+		}
+		if(this.SiteCoordAbbrevAttached != o.SiteCoordAbbrevAttached){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: SiteCoordAbbrevAttached is not same");
+			isequal = 1;
+		}
+		if(this.DikeDescriptionAttached != o.DikeDescriptionAttached){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: DikeDescriptionAttached is not same");
+			isequal = 1;
+		}
+		if(this.FacilityInfoSameAsLastYear != o.FacilityInfoSameAsLastYear){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: FacilityInfoSameAsLastYear is not same");
+			isequal = 1;
+		}
+		if(!Objects.equals(this.NameAndTitleOfCertifier, o.NameAndTitleOfCertifier)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: NameAndTitleOfCertifier is not same");
+			isequal = 1;
+		}
+
+		if( !(Objects.equals(this.DateSigned, o.DateSigned) ||
+				(this.DateSigned != null && o.DateSigned != null
+						&& new SimpleDateFormat("yyyyMMdd").format(this.DateSigned)
+						.equals(new SimpleDateFormat("yyyyMMdd").format(o.DateSigned)))))
+		{
+			epcraTier2DatasetDiff.addDifferences("<Facility>: DateSigned is not same");
+			isequal = 1;
+		}
+
+		if(!Objects.equals(this.FeesTotal, o.FeesTotal)){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: FeesTotal is not same");
+			isequal = 1;
+		}
+
+		if(this.Manned != o.Manned){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: Manned is not same");
+			isequal = 1;
+		}
+
+		if(this.MaxNumOccupants != o.MaxNumOccupants){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: MaxNumOccupants is not same");
+			isequal = 1;
+		}
+
+		if(this.SubjectToChemAccidentPrevention != o.SubjectToChemAccidentPrevention){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: SubjectToChemAccidentPrevention is not same");
+			isequal = 1;
+		}
+
+		if(this.SubjectToEmergencyPlanning != o.SubjectToEmergencyPlanning){
+			epcraTier2DatasetDiff.addDifferences("<Facility>: SubjectToEmergencyPlanning is not same");
+			isequal = 1;
+		}
+
+		return isequal;
+	}
 }

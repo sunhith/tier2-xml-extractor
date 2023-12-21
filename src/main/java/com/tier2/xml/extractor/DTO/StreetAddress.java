@@ -33,6 +33,5 @@ public class StreetAddress {
 	public int getZipcode() { 
 		 return this.Zipcode; } 
 	public void setZipcode(int Zipcode) { 
-		 this.Zipcode = Zipcode; } 
-
+		 this.Zipcode = Zipcode; }
 }

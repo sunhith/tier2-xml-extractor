@@ -78,8 +78,6 @@ public class Tier2XmlExtractor {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             EpcraTier2Dataset dataset = (EpcraTier2Dataset) jaxbUnmarshaller.unmarshal(inputFile);
             convertToXML1(dataset, jaxbContext);
-
-
         } catch (JAXBException e) {
             e.printStackTrace();
         } catch (Exception e) {
