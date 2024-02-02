@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epcraTier2Dataset version="1.0.0" xmlns="https://cameo.noaa.gov/epcra_tier2/data_standard/v1">
+    <dataset reportyear="2023">
+        <facilities>
+            <facility recordid="FATR2023SXTWFB0001MR">
+                <facilityName>Test Facility Addivant USA LLC At Alabama</facilityName>
+                <streetAddress>
+                    <street>43300 AL-225</street>
+                    <city>Bay Minette</city>
+                    <state>AL</state>
+                    <zipcode>36507</zipcode>
+                </streetAddress>
+                <mailingAddress>
+                    <street/>
+                    <city/>
+                    <state/>
+                    <zipcode/>
+                    <country>USA</country>
+                </mailingAddress>
+                <county>Baldwin</county>
+                <fireDistrict>Test Optional Fire District</fireDistrict>
+                <latLong>
+                    <latitude>30.856493</latitude>
+                    <longitude>-87.865187</longitude>
+                </latLong>
+                <department>Test Optional Department</department>
+                <notes>Test Notes</notes>
+                <sitePlanAttached>false</sitePlanAttached>
+                <siteCoordAbbrevAttached>false</siteCoordAbbrevAttached>
+                <dikeDescriptionAttached>true</dikeDescriptionAttached>
+                <facilityInfoSameAsLastYear>false</facilityInfoSameAsLastYear>
+                <nameAndTitleOfCertifier>Qian</nameAndTitleOfCertifier>
+                <dateSigned>2023-12-12</dateSigned>
+                <phone recordid="PHTR2023SXTWFB0001MV">
+                    <phoneNumber>123456789</phoneNumber>
+                    <phoneType>24-hour</phoneType>
+                </phone>
+                <manned>false</manned>
+                <maxNumOccupants>0</maxNumOccupants>
+                <subjectToChemAccidentPrevention>false</subjectToChemAccidentPrevention>
+                <subjectToEmergencyPlanning>false</subjectToEmergencyPlanning>
+                <stateFields>
+                    <stateField required="true">
+                        <label>Master ID Number</label>
+                        <t2sFieldname>State05Text</t2sFieldname>
+                        <data>111</data>
+                    </stateField>
+                    <stateField required="true">
+                        <label>Valid e-mail address for your proof of receipt</label>
+                        <t2sFieldname>State06Text</t2sFieldname>
+                        <data>Qian.Wang@utdallas.edu</data>
+                    </stateField>
+                </stateFields>
+                <lastModified>2023-12-12</lastModified>
+                <contactIds>
+                    <contactId linkId="CKTR2023SXTWFB0001M6">CTTR2023SXTWFB0001M6</contactId>
+                </contactIds>
+                <chemicals>
+                    <chemical recordid="CVTR2023SXTWFB0001NB">
+                        <chemName>1-undecene</chemName>
+                        <casNumber>28761275</casNumber>
+                        <ehs>false</ehs>
+                        <pure>true</pure>
+                        <mixture>false</mixture>
+                        <solid>false</solid>
+                        <liquid>true</liquid>
+                        <gas>false</gas>
+                        <hazards>
+                            <hazard>
+                                <category>Explosive</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Flammable (gases, aerosols, liquids, or solids)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Oxidizer (liquid, solid or gas)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Self-reactive</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Pyrophoric (liquid or solid)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Pyrophoric Gas</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Self-heating</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Organic peroxide</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Corrosive to metal</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Gas under pressure (compressed gas)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>In contact with water emits flammable gas</category>
+                                <value>true</value>
+                            </hazard>
+                            <hazard>
+                                <category>Combustible Dust</category>
+                                <value>true</value>
+                            </hazard>
+                            <hazard>
+                                <category>Acute toxicity (any route of exposure)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Skin corrosion or irritation</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Serious eye damage or eye irritation</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Respiratory or skin sensitization</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Germ cell mutagenicity</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Carcinogenicity</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Reproductive toxicity</category>
+                                <value>true</value>
+                            </hazard>
+                            <hazard>
+                                <category>Specific target organ toxicity(single or repeated exposure)</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Aspiration hazard</category>
+                                <value>false</value>
+                            </hazard>
+                            <hazard>
+                                <category>Simple Asphyxiant</category>
+                                <value>true</value>
+                            </hazard>
+                            <hazard>
+                                <category>Hazard Not Otherwise Classified</category>
+                                <value>false</value>
+                            </hazard>
+                        </hazards>
+                        <aveAmount>2222222.0</aveAmount>
+                        <aveAmountCode>12</aveAmountCode>
+                        <maxAmount>2.222222222E9</maxAmount>
+                        <maxAmountCode>13</maxAmountCode>
+                        <sameAsLastYear>false</sameAsLastYear>
+                        <daysOnSite>11</daysOnSite>
+                        <maxAmtLargestContainer>222222.0</maxAmtLargestContainer>
+                        <belowReportingThresholds>false</belowReportingThresholds>
+                        <confidentialStorageLocs>false</confidentialStorageLocs>
+                        <tradeSecret>false</tradeSecret>
+                        <lastModified>2023-12-12</lastModified>
+                        <storageLocations>
+                            <storageLocation recordid="CLTR2023SXTWFB0001ND">
+                                <locationDescription>43300 AL-225, Bay Minette, AL 36507</locationDescription>
+                                <storageType>Battery</storageType>
+                                <pressure>Greater than ambient pressure</pressure>
+                                <temperature>Greater than ambient temperature</temperature>
+                                <amount unit="kilograms">111111.0</amount>
+                            </storageLocation>
+                        </storageLocations>
+                    </chemical>
+                </chemicals>
+                <facilityIds>
+                    <facilityId recordid="FDTR2023SXTWFB0001NQ" type="NAICS">
+                        <id>325992</id>
+                        <description>Photographic Film, Paper, Plate, and Chemical Manufacturing</description>
+                    </facilityId>
+                    <facilityId recordid="FDTR2023SXTWFB0002NQ" type="D-U-N-S">
+                        <id>N/A</id>
+                        <description>Dun &amp; Bradstreet description</description>
+                    </facilityId>
+                </facilityIds>
+                <attachments>
+                    <attachment recordid="SKTR2023SXTWFB0001NU">
+                        <fileName>163310 1041 State Street C.pdf</fileName>
+                    </attachment>
+                </attachments>
+            </facility>
+        </facilities>
+        <contacts>
+            <contact recordid="CTTR2023SXTWFB0001M6">
+                <firstName>Wang</firstName>
+                <lastName>Qian</lastName>
+                <title>Manager</title>
+                <email>Qian.Wang@utdallas.edu</email>
+                <mailingAddress>
+                    <street>537 Johansen Expy</street>
+                    <city>Fairbanks</city>
+                    <state>AK</state>
+                    <zipcode>99701</zipcode>
+                    <country>USA</country>
+                </mailingAddress>
+                <contactTypes>
+                    <contactType>Tier II Information Contact</contactType>
+                    <contactType>Emergency Contact</contactType>
+                    <contactType>Owner / Operator</contactType>
+                </contactTypes>
+                <lastModified>2023-12-12</lastModified>
+                <phones>
+                    <phone recordid="PHTR2023SXTWFB0002N0">
+                        <phoneNumber>907-451-9900</phoneNumber>
+                        <phoneType>Mobile - Cell</phoneType>
+                    </phone>
+                    <phone recordid="PHTR2023SXTWFB0003N0">
+                        <phoneNumber>907-451-9901</phoneNumber>
+                        <phoneType>24-hour</phoneType>
+                    </phone>
+                </phones>
+            </contact>
+        </contacts>
+    </dataset>
+</epcraTier2Dataset>
