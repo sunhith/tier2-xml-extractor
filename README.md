@@ -12,4 +12,8 @@
 2. If a property is of list type, comparisons are conducted using the unique IDs within that property's list
 
 **Features:**
-//TO DO
+1. Compare the XML data of Tier2 and Eplan and identify the disparities in their property information.
+2. We Can disregard the properties that are not relevant for checking differences.
+3. Validate the XML data with schema(xsd)
+4. Feasibility to modify the comparison logic based on the DTO classes. Each DTO class includes a method called 
+   compareDTO, allowing us to adjust the comparison logic specific to that DTO
